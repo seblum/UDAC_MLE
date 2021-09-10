@@ -1,4 +1,4 @@
-##### Udacity Nanodegree - Machine Learning Engineer | September 2021 | S. Blum 
+##### Udacity Nanodegree - Machine Learning Engineer | September 2021
 
 # Capstone Project Proposal - Starbucks propensity modeling
 
