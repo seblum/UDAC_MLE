@@ -56,8 +56,7 @@ if __name__ == '__main__':
 
     ## Define a model 
     model = SVC(C=10000.0, gamma=1e-05)
-#    model = SVC()
-
+    
     ## Train the model
     model.fit(train_x, train_y)    
 

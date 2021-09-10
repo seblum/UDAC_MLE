@@ -50,10 +50,10 @@ if __name__ == '__main__':
             keras.Input(shape=input_shape),
             layers.Dense(hidden_shape, activation='sigmoid'),
             layers.Dense(hidden_shape, activation='sigmoid'),
-            layers.Dense(hidden_shape, activation='sigmoid'),
-            layers.Dense(hidden_shape, activation='sigmoid'),
-            layers.Dense(output_shape, activation="sigmoid"),
-            layers.Dropout(0.25)
+            #layers.Dense(hidden_shape, activation='sigmoid'),
+            #layers.Dense(hidden_shape, activation='sigmoid'),
+            layers.Dense(output_shape, activation="sigmoid")
+            #layers.Dropout(0.25)
         ]
     )
 
@@ -64,4 +64,7 @@ if __name__ == '__main__':
     # fit model
     model.fit(X_train_nn, y_train_nn, epochs=epochs,verbose=1)
    
-    tf.contrib.saved_model.save_keras_model(model, '/opt/ml/model')
+    #tf.saved_model.save(model, '/opt/ml/model')
+    model.save(os.path.join(args.model_dir, "tensorflow_model/1"), save_format="tf")
+
+    # tf.contrib.saved_model.save_keras_model(model, '/opt/ml/model')
