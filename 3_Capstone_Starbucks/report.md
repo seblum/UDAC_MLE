@@ -109,7 +109,7 @@ The portfolio data is one-hot-encoded on the offer types and the channels where 
 
 Similar to the portfolio table, the profile data is one-hot-encoded on the genders and age. In order to one-hot-encode age, age groups have been defined in intervals of 10 years. Additionally, the membership of the customers have been calculated to the number of total days (from registration until today).
 
-![transcipt_ohe](images/transcipt_ohe.png)
+![transcript_ohe](images/transcript_ohe.png)
 
 The transcript data is one-hot-encoded on the event types and value column. Most important from the values are the offer_id and id_offer, as they are used to merge the data in the next step.
 

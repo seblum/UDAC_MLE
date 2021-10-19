@@ -50,10 +50,7 @@ if __name__ == '__main__':
             keras.Input(shape=input_shape),
             layers.Dense(hidden_shape, activation='sigmoid'),
             layers.Dense(hidden_shape, activation='sigmoid'),
-            #layers.Dense(hidden_shape, activation='sigmoid'),
-            #layers.Dense(hidden_shape, activation='sigmoid'),
             layers.Dense(output_shape, activation="sigmoid")
-            #layers.Dropout(0.25)
         ]
     )
 
